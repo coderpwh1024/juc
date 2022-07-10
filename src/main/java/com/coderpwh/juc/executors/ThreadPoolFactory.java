@@ -71,12 +71,6 @@ public class ThreadPoolFactory {
         return  "success";
     }
 
-
-
-
-
-
-
     /***
      *
      *   运行线程数
@@ -89,7 +83,6 @@ public class ThreadPoolFactory {
         return  pool.getActiveCount();
     }
 
-
     /***
      * 最大线程数
      * @param pool
@@ -99,7 +92,6 @@ public class ThreadPoolFactory {
         return  pool.getMaximumPoolSize();
     }
 
-
     /***
      * 阻塞线程数
      * @param pool
@@ -108,17 +100,4 @@ public class ThreadPoolFactory {
     public  static  int getBlockingQueue(ThreadPoolExecutor pool){
         return  pool.getQueue().size();
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
